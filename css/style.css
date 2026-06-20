@@ -88,6 +88,11 @@ ol {
   color: var(--color-primary);
 }
 
+.text-highlight {
+  color: var(--color-primary);
+  font-style: normal;
+}
+
 .section {
   padding: clamp(4rem, 6vw, 7.5rem) clamp(1.25rem, 3vw, 3rem);
 }
@@ -119,7 +124,6 @@ ol {
   font-size: clamp(2.25rem, 3.1vw, 3.75rem);
   font-weight: 900;
   line-height: 1.22;
-  letter-spacing: -0.06em;
 }
 
 .section-heading__desc {
@@ -263,11 +267,6 @@ ol {
   font-weight: 900;
   line-height: 1.16;
   letter-spacing: -0.08em;
-}
-
-.hero__title em {
-  color: var(--color-primary);
-  font-style: normal;
 }
 
 .hero__desc {
