@@ -647,7 +647,7 @@ ol {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: clamp(1.25rem, 3vw, 3rem);
+  gap: clamp(1rem, 3vw, 3rem);
   margin-top: clamp(2rem, 3vw, 3rem);
   padding: clamp(1.5rem, 2.5vw, 2.25rem);
   border: 1px solid rgba(0, 141, 145, .14);
@@ -661,7 +661,7 @@ ol {
 .compare-banner strong {
   display: block;
   color: var(--color-navy);
-  font-size: clamp(1.25rem, 1.55vw, 1.625rem);
+  font-size: clamp(1rem, 1.55vw, 1.625rem);
   font-weight: 900;
   line-height: 1.35;
 }
@@ -669,7 +669,7 @@ ol {
 .compare-banner p {
   margin-top: .45rem;
   color: var(--color-muted);
-  font-size: clamp(.875rem, .95vw, 1rem);
+  font-size: clamp(.8rem, .95vw, 1rem);
   font-weight: 700;
 }
 
