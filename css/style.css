@@ -13,7 +13,7 @@ html {
 
 body {
   overflow-x: hidden;
-  background: #fff;
+  background: var(--color-white);
   color: #172033;
   font-family: "SUIT", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
   line-height: 1.6;
@@ -44,13 +44,19 @@ ol {
 
 /* Common */
 :root {
+  --color-white: #fff;
   --color-primary: #008d91;
   --color-primary-dark: #006c72;
   --color-navy: #172033;
   --color-text: #273248;
+  --color-subtext: #425163;
   --color-muted: #738095;
   --color-bg: #effafa;
   --inner: 1360px;
+}
+
+.mo-break {
+  display: none;
 }
 
 .button {
@@ -71,7 +77,7 @@ ol {
 .button--primary {
   background: var(--color-primary);
   box-shadow: 0 .875rem 1.875rem rgba(0, 141, 145, .22);
-  color: #fff;
+  color: var(--color-white);
 }
 
 .button--outline {
@@ -81,7 +87,7 @@ ol {
 }
 
 .button--light {
-  background: #fff;
+  background: var(--color-white);
   color: var(--color-primary);
 }
 
@@ -118,7 +124,7 @@ ol {
 
 .section-heading__title {
   color: var(--color-navy);
-  font-size: clamp(2.25rem, 3.1vw, 3.75rem);
+  font-size: clamp(2.2rem, 3.1vw, 3.75rem);
   font-weight: 900;
   line-height: 1.22;
 }
@@ -146,7 +152,7 @@ ol {
   background: var(--color-primary);
   box-shadow: 0 1rem 2rem rgba(0, 141, 145, .3);
 
-  color: #fff;
+  color: var(--color-white);
   font-size: .9375rem;
   font-weight: 900;
 }
@@ -218,7 +224,7 @@ ol {
   border-radius: .625rem;
   background: linear-gradient(135deg, #009da2, #00777d);
   box-shadow: 0 .75rem 1.75rem rgba(0, 141, 145, .2);
-  color: #fff;
+  color: var(--color-white);
   font-weight: 900;
   line-height: 1.2;
   white-space: nowrap;
@@ -341,11 +347,11 @@ ol {
 
 .hero__desc {
   margin-top: clamp(2rem, 2.8vw, 2.875rem);
-  color: var(--color-text);
-  font-size: clamp(1.18rem, 1.55vw, 1.75rem);
-  font-weight: 800;
-  line-height: 1.65;
-  letter-spacing: -.045em;
+  color: var(--color-subtext);
+  font-size: clamp(1rem, 1.45vw, 1.625rem);
+  font-weight: 900;
+  line-height: 1.8;
+  letter-spacing: -.03em;
 }
 
 .hero__buttons {
@@ -372,7 +378,7 @@ ol {
   gap: .45rem;
   padding: 0 clamp(.85rem, 1.35vw, 1.375rem);
   border-right: 1px solid rgba(0, 141, 145, .14);
-  color: #526173;
+  color: var(--color-subtext);
   font-size: clamp(.75rem, .8vw, .875rem);
   font-weight: 900;
   white-space: nowrap;
@@ -413,7 +419,7 @@ ol {
   height: clamp(3.6rem, 5vw, 5.875rem);
   border-radius: 1rem;
   background: linear-gradient(135deg, #35c8cd, var(--color-primary));
-  color: #fff;
+  color: var(--color-white);
   font-size: clamp(2rem, 3vw, 2.875rem);
 }
 
@@ -428,7 +434,7 @@ ol {
 
 .hero__card p {
   margin-top: .45rem;
-  color: var(--color-text);
+  color: var(--color-subtext);
   font-size: clamp(.875rem, 1vw, 1.125rem);
   font-weight: 800;
   letter-spacing: -.035em;
@@ -457,7 +463,7 @@ ol {
   align-items: center;
   padding: clamp(1.75rem, 1.8vw, 2rem) 1rem;
   border-radius: .875rem;
-  background: #fff;
+  background: var(--color-white);
   box-shadow: 0 1rem 2.375rem rgba(0, 87, 96, .06);
   text-align: center;
 }
@@ -487,7 +493,7 @@ ol {
 
 /* Process */
 .process {
-  background: #fff;
+  background: var(--color-white);
 }
 
 .process__list {
@@ -527,7 +533,7 @@ ol {
   height: clamp(2.25rem, 2.7vw, 2.625rem);
   border-radius: 50%;
   background: var(--color-primary);
-  color: #fff;
+  color: var(--color-white);
   font-size: clamp(.8125rem, .9vw, .9375rem);
   font-weight: 900;
   transform: translateX(clamp(-4.875rem, -5.2vw, -3.75rem));
@@ -542,7 +548,7 @@ ol {
   height: clamp(7.75rem, 10vw, 9.75rem);
   border: 2px solid #dceeee;
   border-radius: 50%;
-  background: #fff;
+  background: var(--color-white);
 }
 
 .process__icon i {
@@ -582,7 +588,7 @@ ol {
   gap: .75rem;
   padding: clamp(1.25rem, 1.8vw, 1.75rem);
   border-radius: .625rem;
-  background: #fff;
+  background: var(--color-white);
   box-shadow: 0 .875rem 2.125rem rgba(0, 87, 96, .05);
   color: var(--color-text);
   font-size: clamp(1rem, 1.05vw, 1.125rem);
@@ -610,7 +616,7 @@ ol {
 .strength-card {
   padding: clamp(2.375rem, 3.1vw, 3.25rem) 1.5rem;
   border-radius: .875rem;
-  background: #fff;
+  background: var(--color-white);
   box-shadow: 0 1rem 2.375rem rgba(0, 87, 96, .06);
   text-align: center;
 }
@@ -646,7 +652,7 @@ ol {
   padding: clamp(1.5rem, 2.5vw, 2.25rem);
   border: 1px solid rgba(0, 141, 145, .14);
   border-radius: 1rem;
-  background: #fff;
+  background: var(--color-white);
   box-shadow: 0 1rem 2.375rem rgba(0, 87, 96, .07);
   color: var(--color-text);
   text-align: left;
@@ -672,7 +678,7 @@ ol {
 .contact {
   padding: clamp(5rem, 7vw, 7.25rem) clamp(1.25rem, 3vw, 3rem);
   background: radial-gradient(circle at 88% 50%, rgba(255, 255, 255, .12), transparent 18rem), linear-gradient(120deg, #008d91, #00646a);
-  color: #fff;
+  color: var(--color-white);
 }
 
 .contact__inner {
@@ -711,7 +717,7 @@ ol {
   margin-bottom: .625rem;
   padding: .375rem .875rem;
   border-radius: 999px;
-  background: #fff;
+  background: var(--color-white);
   color: var(--color-primary);
   font-size: .8125rem;
   font-weight: 900;
@@ -719,7 +725,7 @@ ol {
 
 .contact__info strong {
   display: block;
-  color: #fff;
+  color: var(--color-white);
   font-size: clamp(2.5rem, 3.6vw, 4rem);
   font-weight: 900;
   line-height: 1.18;
@@ -753,7 +759,7 @@ ol {
 }
 
 .footer__logo {
-  color: #fff;
+  color: var(--color-white);
   font-size: clamp(1.625rem, 2.1vw, 2.125rem);
   font-weight: 900;
   line-height: 1;
@@ -761,7 +767,7 @@ ol {
 
 .footer__zone {
   margin-top: .25rem;
-  color: #fff;
+  color: var(--color-white);
   font-size: .875rem;
   font-weight: 800;
 }
@@ -775,7 +781,7 @@ ol {
 .footer__menu strong {
   display: block;
   margin-bottom: 1.125rem;
-  color: #fff;
+  color: var(--color-white);
   font-size: 1rem;
 }
 
@@ -799,7 +805,7 @@ ol {
 .footer__menu em {
   display: block;
   margin-top: 1rem;
-  color: #fff;
+  color: var(--color-white);
   font-size: clamp(1.375rem, 1.8vw, 1.75rem);
   font-style: normal;
   font-weight: 900;
@@ -860,7 +866,7 @@ ol {
   }
 
   .hero__bg-image {
-    object-position: 70%;
+    object-position: 77% center;
   }
 
   .hero__card {
@@ -890,6 +896,10 @@ ol {
 }
 
 @media (max-width: 720px) {
+  .mo-break {
+    display: block;
+  }
+
   .section {
     padding-right: 1.25rem;
     padding-left: 1.25rem;
@@ -917,7 +927,7 @@ ol {
   }
 
   .hero__bg::before {
-    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(247, 251, 251, .95) 100%);
+    background: linear-gradient(180deg, rgba(255, 255, 255, .35) 0%, rgba(255, 255, 255, .55) 30%, rgba(255, 255, 255, .78) 65%, rgba(247, 251, 251, .95) 100%);
   }
 
   .hero {
@@ -977,7 +987,7 @@ ol {
   }
 
   .button--outline:hover {
-    background: #fff;
+    background: var(--color-white);
     border-color: var(--color-primary);
     color: var(--color-primary-dark);
     transform: translateY(-.1875rem) scale(1.02);
@@ -989,7 +999,7 @@ ol {
 
   .footer__menu a:hover,
   .footer__bottom a:hover {
-    color: #fff;
+    color: var(--color-white);
     text-decoration-color: rgba(255, 255, 255, 1);
   }
 
@@ -999,5 +1009,4 @@ ol {
     transform: translateY(-.5rem);
     box-shadow: 0 1.5rem 3rem rgba(0, 87, 96, .12);
   }
-
 }
